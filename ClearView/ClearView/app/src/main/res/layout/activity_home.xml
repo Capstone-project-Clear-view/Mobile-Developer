@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Header dengan teks sambutan dan SearchView -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Hi, Anisa\nAyo cek kesehatan matamu"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWelcome"
+        android:layout_margin="16dp"
+        android:queryHint="Cari di ClearView"/>
+
+    <!-- Card untuk bagian Get Started -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/searchView"
+        android:layout_margin="16dp"
+        android:elevation="4dp">
+
+        <!-- Tambahkan konten lebih lanjut di sini jika diperlukan -->
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Placeholder untuk bagian Rekomendasi -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRecommendation"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        android:elevation="4dp"/>
+
+    <!-- Placeholder untuk bagian Lainnya -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOther"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/cardRecommendation"
+        android:layout_margin="16dp"
+        android:elevation="4dp"/>
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation" />
+
+</RelativeLayout>

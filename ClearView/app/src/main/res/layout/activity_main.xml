@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvClearView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ClearView"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empowering Clear Vision"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_below="@id/tvClearView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:backgroundTint="#F4CE14"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tvSubtitle"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:backgroundTint="#008000"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/btnSignIn"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

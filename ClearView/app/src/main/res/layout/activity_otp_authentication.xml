@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTP Authentication"
+        android:textSize="24sp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="An authentication code has been sent to anisa1999@gmail.com"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+
+        <!-- EditText untuk input OTP -->
+        <EditText
+            android:id="@+id/otpEditText1"
+            style="@style/OtpBoxStyle"
+            android:inputType="number"
+            android:maxLength="1"
+            android:digits="0123456789" />
+
+        <EditText
+            android:id="@+id/otpEditText2"
+            style="@style/OtpBoxStyle"
+            android:inputType="number"
+            android:maxLength="1"
+            android:digits="0123456789" />
+
+        <EditText
+            android:id="@+id/otpEditText3"
+            style="@style/OtpBoxStyle"
+            android:inputType="number"
+            android:maxLength="1"
+            android:digits="0123456789" />
+
+        <EditText
+            android:id="@+id/otpEditText4"
+            style="@style/OtpBoxStyle"
+            android:inputType="number"
+            android:maxLength="1"
+            android:digits="0123456789" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resend code"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(0:30)"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:backgroundTint="#008000"
+        android:layout_marginTop="32dp"/>
+</LinearLayout>
